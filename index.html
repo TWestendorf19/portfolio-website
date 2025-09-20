@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Tyson Westendorf - Embedded Systems Engineer and Developer">
+    <title>Tyson Westendorf Portfolio</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/mai.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="left-section">
+                <a href="#home" class="logo-link">
+                    <img src="images/tw_logo_transparent.png" alt="TW Logo" class="site-logo" width="50">
+                </a>
+                <h2 class="header-name">Tyson Westendorf</h2>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <div class="hamburger-icon">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <canvas id="particle-canvas" aria-hidden="true"></canvas>
+            <div class="hero-content stagger-children">
+                <h1>Hi, I'm Tyson.</h1>
+                <h2>Embedded Systems Engineer and Developer</h2>
+                <h3>Crafting efficient solutions through hardware and software integration</h3>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div>
+                    <p>I'm Tyson Westendorf, an Embedded Systems Engineer with a passion for developing solutions
+                        involving hardware and software integration.
+                    </p>
+                    <p>I recently graduated from South Dakota School of Mines and Technology with a degree in Computer
+                        Engineering which provided me with a solid foundation in both hardware and software principles.
+                        My academic journey has equipped me with skills in embedded C programming, data collection and
+                        analysis, and system design.
+                    </p>
+                    <p>In my free time, I enjoy working on personal projects that allow me to explore development
+                        concepts and technologies including web development, and more.
+                    </p>
+                </div>
+                <div>
+                    <div class="profile-image-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div>
+                <article>
+                    <div class="project-content">
+                        <h3>Project Title</h3>
+                        <p>Project description placeholder...</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div>
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list stagger-children">
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Go</li>
+                        <li>HTML/CSS/JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Specializations</h3>
+                    <ul class="skills-list stagger-children">
+                        <li>Embedded C</li>
+                        <li>Data Collection and Analysis</li>
+                        <li>System Design</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <!-- Social media links will be added here -->
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2025 Tyson Westendorf. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
