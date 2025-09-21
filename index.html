@@ -7,19 +7,36 @@
     <meta name="description" content="Portfolio of Tyson Westendorf - Embedded Systems Engineer and Developer">
     <title>Tyson Westendorf Portfolio</title>
     <link rel="icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script src="src/js/mai.js" type="module" defer></script>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/main.js" type="module" defer></script>
 </head>
 
 <body>
     <header class="site-header">
         <div class="header-content">
+            <!-- Logo and Site Name -->
             <div class="left-section">
                 <a href="#home" class="logo-link">
                     <img src="images/tw_logo_transparent.png" alt="TW Logo" class="site-logo" width="50">
                 </a>
                 <h2 class="header-name">Tyson Westendorf</h2>
             </div>
+            <!-- Theme Toggle (Dark and Light Mode) -->
+            <button id="theme-switch">
+                <!-- Light mode icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                </svg>
+                <!-- Dark mode icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                </svg>
+            </button>
+            <!-- Mobile menu button -->
             <nav class="main-nav">
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <div class="hamburger-icon">
@@ -43,16 +60,17 @@
         <section id="home" class="hero-section">
             <canvas id="particle-canvas" aria-hidden="true"></canvas>
             <div class="hero-content stagger-children">
-                <h1>Hi, I'm Tyson.</h1>
-                <h2>Embedded Systems Engineer and Developer</h2>
-                <h3>Crafting efficient solutions through hardware and software integration</h3>
+                <h1 class="animate-fade-up">Hi, I'm Tyson.</h1>
+                <h2 class="animate-fade-up">Embedded Systems Engineer and Developer</h2>
+                <h3 class="hero-description animate-fade-up">Crafting efficient solutions through hardware and software
+                    integration</h3>
             </div>
         </section>
 
         <section id="about" class="about-section">
-            <h2>About Me</h2>
+            <h2 class="animate-fade-up">About Me</h2>
             <div class="about-content">
-                <div>
+                <div class="about-text animate-fade-right">
                     <p>I'm Tyson Westendorf, an Embedded Systems Engineer with a passion for developing solutions
                         involving hardware and software integration.
                     </p>
@@ -65,16 +83,16 @@
                         concepts and technologies including web development, and more.
                     </p>
                 </div>
-                <div>
+                <div class="about-image animate-fade-left">
                     <div class="profile-image-placeholder"></div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <div>
-                <article>
+            <h2 class="animate-fade-up">Projects</h2>
+            <div class="projects-grid stagger-children">
+                <article class="project-card animate-scale">
                     <div class="project-content">
                         <h3>Project Title</h3>
                         <p>Project description placeholder...</p>
@@ -88,9 +106,9 @@
         </section>
 
         <section id="skills" class="skills-section">
-            <h2>Skills</h2>
+            <h2 class="animate-fade-up">Skills</h2>
             <div class="skills-container">
-                <div>
+                <div class="skills-category animate-fade-right">
                     <h3>Programming Languages</h3>
                     <ul class="skills-list stagger-children">
                         <li>C</li>
@@ -100,7 +118,7 @@
                         <li>HTML/CSS/JavaScript</li>
                     </ul>
                 </div>
-                <div>
+                <div class="skills-category animate-fade-left">
                     <h3>Specializations</h3>
                     <ul class="skills-list stagger-children">
                         <li>Embedded C</li>
